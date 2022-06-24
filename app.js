@@ -30,7 +30,7 @@ const timeOfStopWatch = () => {
     min = `0${min}`.slice(-2);
   }
 
-  stopwatch.innerHTML = `${min} : ${sec} : ${mSec}`;
+  stopwatch.innerHTML = `${min}:${sec}:${mSec}`;
 };
 
 const playTimer = () => {
@@ -57,7 +57,7 @@ btnStop.addEventListener("click", () => {
   mSec = 0;
   sec = 0;
   min = 0;
-  stopwatch.innerHTML = `0${min} : 0${sec} : 0${mSec}`;
+  stopwatch.innerHTML = `0${min}:0${sec}:0${mSec}`;
   stopTimer();
   isStopped = true;
   btnPlay.innerHTML = ` <i class="fa-solid fa-circle-play"></i>`;
