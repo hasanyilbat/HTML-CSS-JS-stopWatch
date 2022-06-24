@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(./img/Alarm-Clock-08.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Short Stack", cursive;
+}
+
+.stopWatch {
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  color: red;
+}
+
+.btn-play {
+  border: none;
+  font-size: 4rem;
+  margin-right: 2rem;
+}
+
+.btn-play:hover {
+  opacity: 0.5;
+}
+
+.btn-stop {
+  border: none;
+  font-size: 4rem;
+}
+
+.btn-stop:hover {
+  opacity: 0.5;
+}
