@@ -20,15 +20,9 @@ const timeOfStopWatch = () => {
     min++;
     sec = 0;
   }
-  if (mSec < 10) {
-    mSec = `0${mSec}`.slice(-2);
-  }
-  if (sec < 10) {
-    sec = `0${sec}`.slice(-2);
-  }
-  if (min < 10) {
-    min = `0${min}`.slice(-2);
-  }
+  min = String(min).length < 2 ? "0" + min : min;
+  sec = String(sec).length < 2 ? "0" + sec : sec;
+  mSec = String(mSec).length < 2 ? "0" + mSec : mSec;
 
   stopwatch.innerHTML = `${min}:${sec}:${mSec}`;
 };
